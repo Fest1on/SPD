@@ -1,4 +1,3 @@
-<!-- Red ASCII Logo -->
 <div align="center">
 <pre>
 <span style="color:red">
@@ -13,6 +12,7 @@
 </span>
 </pre>
 </div>
+
 
 
 # SDP – Simple **Defense-oriented** Packet Simulator  
