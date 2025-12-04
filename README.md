@@ -1,4 +1,4 @@
-<div align="center">
+<!-- Red ASCII Logo -->
 <pre>
 <span style="color:red">
  /$$$$$$  /$$$$$$$  /$$$$$$$
@@ -11,7 +11,6 @@
  \______/ |_______/ |__/
 </span>
 </pre>
-</div>
 
 
 
