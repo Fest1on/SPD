@@ -7,4 +7,6 @@ add_executable(S_D_P start_dos.cpp
         wifi_scanner.cpp
         SDP.cpp
         termcolor.hpp
+        IP_info.cpp
+        stdc++.h
 )
