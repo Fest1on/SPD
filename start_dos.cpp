@@ -3,8 +3,11 @@
 #include <cstdlib>
 #include "CLI11.hpp"
 
+void lt();
+
 using namespace std;
 void start_dos() {
+
     cout << "Please enter ip";
     string ip;
     cin >> ip;
@@ -12,6 +15,7 @@ void start_dos() {
     int cycle;
     cin >> cycle;
     for (int i = 0; i < cycle; i++) {
+        lt();
         system(("ping " + ip).c_str());
     }
 }

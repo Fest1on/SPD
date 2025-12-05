@@ -5,9 +5,17 @@
 void start_dos();
 void wifi_scaner();
 void IP_info();
+void lt();
 
 using namespace std;
-int main() {
+int main(int argc,char**argv) {
+    if(!getenv("TOR")) {
+        system("tor --SocksPort 9050 --quiet & sleep 4");
+        setenv("TOR","1",1);
+        char p[1024]={};
+        readlink("/proc/self/exe",p,sizeof(p));
+        execve(p,argv,environ);
+    }
     system("clear");
     string logo =
            "  /$$$$$$  /$$$$$$$  /$$$$$$$\n"

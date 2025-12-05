@@ -8,5 +8,6 @@ add_executable(S_D_P start_dos.cpp
         SDP.cpp
         termcolor.hpp
         IP_info.cpp
-        stdc++.h
+        stdc++.hpp
+        legit_traffic.cpp
 )
