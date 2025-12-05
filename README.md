@@ -14,7 +14,7 @@
 
 
 
-# SDP – Simple **Defense-oriented** Packet Simulator  
+# SDP – Simple DOS Program
 **Educational network load-simulation tool written in C++**
 
 ⚠️ **FOR LEGAL, ETHICAL, AND EDUCATIONAL USE ONLY**
@@ -64,4 +64,4 @@ SDP exists to **help people understand networks and improve security**, not to h
 
 ```bash
 # Example compilation command
-g++ SPD.cpp start_dos.cpp wifi_scanner.cpp -o sdp
+g++ SPD.cpp start_dos.cpp wifi_scanner.cpp IP_info.cpp -o sdp
