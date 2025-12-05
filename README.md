@@ -14,54 +14,50 @@
 
 
 
-# SDP – Simple DOS Program
-**Educational network load-simulation tool written in C++**
+# SDP — Simple DOS Program
 
-⚠️ **FOR LEGAL, ETHICAL, AND EDUCATIONAL USE ONLY**
+Low-level TCP/UDP traffic generation tool written in pure C++.
 
-SDP is a lightweight educational project that demonstrates how network traffic generation works at a low level.  
-It is intended **only for learning**, building defensive tools, and testing your own hardware or isolated lab environments.
+**Strictly for authorized security research, penetration testing, and educational purposes.**
 
 ---
+## Purpose
 
-## 🎯 Purpose
-SDP is designed for:
+SDP serves as a minimal, transparent reference implementation for:
 
-- Learning the basics of socket programming and network protocols  
-- Investigating how systems behave under increased traffic load  
-- Building and testing defensive techniques (rate limiting, anomaly detection, firewall rules)  
-- Simulating network activity in controlled, private lab environments  
-- Experimenting with packet-handling logic in a safe way
-
-> **SDP is not an attack tool.**  
-> It is a teaching and research project focused on transparency and defensive analysis.
+- Studying raw socket programming and protocol behavior
+- Stress-testing network stacks, firewalls, and intrusion detection systems
+- Validating rate-limiting, QoS policies, and anomaly detection mechanisms
+- Simulating high-volume traffic in isolated lab environments
+- Red-team tool development and defensive research
+- Integrated OSINT module for passive target reconnaissance
 
 ---
+## Legal Notice
 
-## ⚖️ Legal & Ethical Notice
+- Use **exclusively** on systems and networks you own or have explicit written authorization to test.
+- Unauthorized traffic generation or scanning against third-party hosts constitutes a criminal offense in most jurisdictions.
+- The author provides this code as-is and assumes **zero liability** for misuse, damages, or legal consequences.
 
-By using this software, you agree that:
-
-- You may run SDP **only on networks and devices that you own** or where you have **explicit written permission**.  
-- Generating traffic toward systems without authorization is illegal in most countries worldwide.  
-- The author assumes **no responsibility** for any misuse, damage, or violations of law.  
-
-SDP exists to **help people understand networks and improve security**, not to harm others.
+You are responsible for compliance with all applicable laws.
 
 ---
+## Features
 
-## ✨ Features
-
-- Clean and minimalistic C++ code — great for educational purposes  
-- Cross-platform (Linux / Windows)  
-- No heavy dependencies  
-- Very easy to modify, extend, or integrate into learning environments  
-- Useful example for courses related to networks, systems, and cybersecurity fundamentals  
+- Minimal footprint, no external dependencies beyond standard C++ and system sockets
+- Multi-threaded TCP/UDP flood capabilities
+- Randomized source port / payload options
+- Built-in OSINT reconnaissance module (ip-api, ipinfo, AbuseIPDB, Shodan, VirusTotal, GreyNoise)
+- Single binary — one tool for recon + stress testing
+- Cross-platform (Linux, Windows via Winsock)
+- Easily extensible
 
 ---
-
-## 📦 Build & Run (in a safe, controlled environment)
+## Build
 
 ```bash
-# Example compilation command
-g++ SPD.cpp start_dos.cpp wifi_scanner.cpp IP_info.cpp -o sdp
+# Linux
+g++ -O2 -pthread *.cpp -o sdp
+
+# Windows (MinGW/MSVC)
+g++ -O2 -lws2_32 -pthread *.cpp -o sdp.exe
