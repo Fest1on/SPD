@@ -49,7 +49,6 @@ You are responsible for compliance with all applicable laws.
 - Randomized source port / payload options
 - Built-in OSINT reconnaissance module (ip-api)
 - Single binary — one tool for recon + stress testing
-- Cross-platform (Linux, Windows via Winsock)
 - Easily extensible
 
 ---
