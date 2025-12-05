@@ -3,8 +3,8 @@
 #include "termcolor.hpp"
 
 void start_dos();
-
 void wifi_scaner();
+void IP_info();
 
 using namespace std;
 int main() {
@@ -23,6 +23,7 @@ int main() {
     cout << "Welcome to SDP\n\n";
     cout << "1.Wifi scaner\n";
     cout << "2.DOS\n";
+    cout << "3.IP info\n";
     cout << "3.Exit\n";
     cout << "\n";
     cout << "Enter your choice: ";
@@ -36,7 +37,11 @@ int main() {
             start_dos();
             break;
         case 3:
+            IP_info();
+            break;
+        case 4:
             exit(0);
+            break;
     }
 }
 
