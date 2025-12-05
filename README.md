@@ -47,7 +47,7 @@ You are responsible for compliance with all applicable laws.
 - Minimal footprint, no external dependencies beyond standard C++ and system sockets
 - Multi-threaded TCP/UDP flood capabilities
 - Randomized source port / payload options
-- Built-in OSINT reconnaissance module (ip-api, ipinfo, AbuseIPDB, Shodan, VirusTotal, GreyNoise)
+- Built-in OSINT reconnaissance module (ip-api)
 - Single binary — one tool for recon + stress testing
 - Cross-platform (Linux, Windows via Winsock)
 - Easily extensible
