@@ -1,7 +1,4 @@
-# <img src="assets/sdp-logo.png" alt="SDP logo" width="96" align="left" style="margin-right:12px"> **SDP — Red Style Project**
-
-
-
+# <img src="assets/sdp-logo.png" alt="SDP logo" width="96" align="left" style="margin-right:12px"> **SDP — Simple DOS Program **
 
 
 
