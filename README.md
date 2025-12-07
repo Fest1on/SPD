@@ -1,62 +1,52 @@
-<!-- Red ASCII Logo -->
-<pre>
-<span style="color:red">
- /$$$$$$  /$$$$$$$  /$$$$$$$
- /$$__  $$| $$__  $$| $$__  $$
-| $$  \__/| $$  \ $$| $$  \ $$
-|  $$$$$$ | $$  | $$| $$$$$$$/
- \____  $$| $$  | $$| $$____/
- /$$  \ $$| $$  | $$| $$
-|  $$$$$$/| $$$$$$$/| $$
- \______/ |_______/ |__/
-</span>
-</pre>
+# <img src="assets/sdp-logo.png" alt="SDP logo" width="96" align="left" style="margin-right:12px"> **SDP — Red Style Project**
 
 
 
-# SDP — Simple DOS Program
 
-Low-level TCP/UDP traffic generation tool written in pure C++.
 
-**Strictly for authorized security research, penetration testing, and educational purposes.**
 
 ---
-## Purpose
 
-SDP serves as a minimal, transparent reference implementation for:
+## 🔥 Overview
 
-- Studying raw socket programming and protocol behavior
-- Stress-testing network stacks, firewalls, and intrusion detection systems
-- Validating rate-limiting, QoS policies, and anomaly detection mechanisms
-- Simulating high-volume traffic in isolated lab environments
-- Red-team tool development and defensive research
-- Integrated OSINT module for passive target reconnaissance
+**SDP** is a lightweight experimental networking project written in C++.  
+It is designed for **educational, research and laboratory testing purposes only**.
 
----
-## Legal Notice
-
-- Use **exclusively** on systems and networks you own or have explicit written authorization to test.
-- Unauthorized traffic generation or scanning against third-party hosts constitutes a criminal offense in most jurisdictions.
-- The author provides this code as-is and assumes **zero liability** for misuse, damages, or legal consequences.
-
-You are responsible for compliance with all applicable laws.
+This project demonstrates:
+- Low-level socket programming  
+- Controlled network traffic simulation  
+- Safe research patterns for networking concepts  
 
 ---
-## Features
 
-- Minimal footprint, no external dependencies beyond standard C++ and system sockets
-- Multi-threaded TCP/UDP flood capabilities
-- Randomized source port / payload options
-- Built-in OSINT reconnaissance module (ip-api)
-- Single binary — one tool for recon + stress testing
-- Easily extensible
+## ⚠️ Legal & Ethical Notice
+
+**Any use of this software to attack third-party servers, networks, or infrastructure (including DoS/DDoS) is illegal and strictly prohibited.**
+
+This project is intended **only for:**
+- Authorized security research
+- Educational demonstrations
+- Testing in isolated lab environments
+
+> You are fully responsible for how you use this software.
 
 ---
-## Build
+
+## ✨ Features
+
+- Minimal C++ codebase  
+- Direct work with system sockets  
+- TCP/UDP traffic generation modules (demonstration only)  
+- Passive network analysis examples  
+- No auto-scanners or built-in attack modules  
+
+---
+
+## 🛠 Build
+
+> Recommended: build and run only inside isolated environments (VM, Docker, lab networks).
+
+### Linux
 
 ```bash
-# Linux
 g++ -O2 -pthread *.cpp -o sdp
-
-# Windows (MinGW/MSVC)
-g++ -O2 -lws2_32 -pthread *.cpp -o sdp.exe
